@@ -60,8 +60,22 @@ void lactureProblem()
     // }
     // for (int i = 0; i < 6; i++) cout << arr[i];
 
-    
+   //? Find Second Largest Element
 
+    int arr[5] = {1,2,3,4,5};
+    int largest = INT_MIN;
+    int second = -1;
+
+    for (int i = 0; i < 5; i++)
+    if (arr[i] > largest) largest = arr[i];
+
+    for (int i = 0; i < 5; i++)
+    {
+        if (arr[i] < largest)
+        second = max(second , arr[i]);
+    }
+    // for (int i = 0; i < 5; i++) cout << arr[i] << " ";
+    cout << second << " ";
 }
 
 int main()
