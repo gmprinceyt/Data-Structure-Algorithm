@@ -107,12 +107,28 @@ void HomeWorkProblem()
 
     //? 6: Find the third smallest element in an array of unique elements size n. Where n>3.
 
-    int arr[5] = {10, 5, 8, 20, 15};
+    int arr[5] = {4,7,2,9,3};
+    int small = INT_MAX;
+    int second = INT_MAX;
+    int third = 0;
 
-    
+    for (int i = 0; i < 5; i++)
+    {
+        if (arr[i] < small)
+        {
+            third = second;
+            second = small;
+            small = arr[i];
+        } else if ( arr[i] < second && arr[i] != small)
+        {
+            third = second;
+            second = arr[i];
+        }
+    };
 
+    cout << third << endl;
 
-
+    //? 7: What is Byte addressable?
 }
 
 int main()
