@@ -105,30 +105,34 @@ void HomeWorkProblem()
 
     //     cout << second << endl;
 
-    //? 6: Find the third smallest element in an array of unique elements size n. Where n>3.
+    // //? 6: Find the third smallest element in an array of unique elements size n. Where n>3.
 
-    int arr[5] = {4,7,2,9,3};
-    int small = INT_MAX;
-    int second = INT_MAX;
-    int third = 0;
+    // int arr[5] = {4,7,2,9,3};
+    // int small = INT_MAX;
+    // int second = INT_MAX;
+    // int third = 0;
 
-    for (int i = 0; i < 5; i++)
-    {
-        if (arr[i] < small)
-        {
-            third = second;
-            second = small;
-            small = arr[i];
-        } else if ( arr[i] < second && arr[i] != small)
-        {
-            third = second;
-            second = arr[i];
-        }
-    };
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     if (arr[i] < small)
+    //     {
+    //         third = second;
+    //         second = small;
+    //         small = arr[i];
+    //     } else if ( arr[i] < second && arr[i] != small)
+    //     {
+    //         third = second;
+    //         second = arr[i];
+    //     }
+    // };
 
-    cout << third << endl;
+    // cout << third << endl;
+
 
     //? 7: What is Byte addressable?
+
+    // each individual byte (8 bits) has its own unique address, allowing for independent access and manipulation of any byte within memory
+    
 }
 
 int main()
