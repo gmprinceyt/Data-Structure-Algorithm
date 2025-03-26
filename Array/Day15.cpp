@@ -92,10 +92,44 @@ void lactureProblem()
 
     // cout <<sum - ans << " ";
 
+    //? Fibonacci Series
+    // 0 1 1 2 3 5 8 13 21 34
+
+    // int n;
+    // cout << "Enter Number: ";
+    // cin >> n; 
+
+    // int arr[1000];
+    // // First 0;
+    // // Second 1;
+    // arr[0] = 0;
+    // arr[1] = 1;
+
+    // for (int i = 2; i < n; i++)
+    // {
+    //     arr[i] = arr[i - 1] + arr[i - 2];
+    // }
+    // for (int i = 0; i < n; i++)
+    //     cout << arr[i] << " ";
+
+    //? Rotate Array by One;
+
+    // int arr[5] = {2,3,4,8,6};
+    // int array[5];
+
+    // for(int i = 0; i < 5-1; i++)
+    // {
+    //     array[i+1] = arr[i];
+    // }
+    // array[0] = arr[4];
+
+    // for (int i = 0; i < 5; i++) cout << array[i] << " "; 
+
+    
 }
 
 int main()
 {
     lactureProblem();
-    // HomeWorkProblem();
+    // HomeWorkProblem(); ON GFG
 }
