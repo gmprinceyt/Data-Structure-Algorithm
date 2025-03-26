@@ -5,13 +5,21 @@ using namespace std;
 
 void lacturePractic()
 {
-    //? Array Selection Sorting 
-    int arr[6] = {10, 8, 2, 3, 1, 4};
+    //? Array Selection Sorting
+    int arr[1000];
+    cout << "Enter Array Size: ";
+    int n = 0;
+    cin >> n;
+    for (int i = 1; i <= n; i++)
+    {
+        cout << "Enter " << i << " index: ";
+        cin >> arr[i];
+    }
 
-    for (int i = 0; i < 6-1; i++)
+    for (int i = 0; i < n - 1; i++)
     {
         int in = i;
-        for (int j = i + 1; j < 6; j++)
+        for (int j = i + 1; j < n; j++)
         {
             if (arr[j] < arr[in])
                 in = j;
@@ -19,7 +27,8 @@ void lacturePractic()
         swap(arr[in], arr[i]);
     }
 
-    for (int i = 0; i < 6; i++) cout<<arr[i];
+    for (int i = 0; i < 6; i++)
+        cout << arr[i];
 }
 
 int main()
