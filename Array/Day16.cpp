@@ -34,27 +34,39 @@ void lacturePractic()
 void HomeWorkPractic()
 {
     //? 1: Selection Sort Algorithm to sort the array of integers in decreasing order.
-    int arr[6] = {2, 1, 6, 8, 3, 10};
+    // int arr[6] = {2, 1, 6, 8, 3, 10};
 
-    for (int i = 0; i < 6 - 1; i++)
+    // for (int i = 0; i < 6 - 1; i++)
+    // {
+    //     int in = i;
+    //     for (int j = i+1; j < 6; j++)
+    //     {
+
+    //         if (arr[in] < arr[j])
+    //             in = j;
+    //     }
+    //     swap(arr[i], arr[in]);
+    // }
+
+    //? 2: Selection Sort Algorithm to sort the array of integers in increasing order by taking the highest number to last place. Question was explained in the class.
+
+    int arr[5] = {10, 4, 3, 2, 8};
+
+    for (int i = 4; i > 0; i--)
     {
-        int in = i;
-        for (int j = i+1; j < 6; j++)
+        int index = i;
+        for (int j = i-1; j >= 0; j--)
         {
-
-            if (arr[in] < arr[j])
-                in = j;
+            if (arr[index] < arr[j]) index = j;
         }
-        swap(arr[i], arr[in]);
+
+        swap(arr[i], arr[index]);
     }
 
-    //? 2: Selection Sort Algorithm to sort the array of integers in increasing order by taking the highest number to last place. Question was explained in the class. 
+    for (int i = 0; i < 5; i++)
+        cout << arr[i] << " ";
 
-    
-
-
-
-    for (int i = 0; i < 6; i++) cout << arr[i];
+    //? 3: Selection Sort Algorithm to sort the array of char in ascending order.
 }
 
 int main()
