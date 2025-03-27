@@ -31,7 +31,15 @@ void lacturePractic()
         cout << arr[i];
 }
 
+void HomeWorkPractic()
+{
+    //? 1: Selection Sort Algorithm to sort the array of integers in decreasing order.
+
+    
+}
+
 int main()
 {
-    lacturePractic();
+    // lacturePractic();
+    HomeWorkPractic();
 }
