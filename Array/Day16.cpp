@@ -50,23 +50,39 @@ void HomeWorkPractic()
 
     //? 2: Selection Sort Algorithm to sort the array of integers in increasing order by taking the highest number to last place. Question was explained in the class.
 
-    int arr[5] = {10, 4, 3, 2, 8};
+    // int arr[5] = {10, 4, 3, 2, 8};
 
-    for (int i = 4; i > 0; i--)
+    // for (int i = 4; i > 0; i--)
+    // {
+    //     int index = i;
+    //     for (int j = i-1; j >= 0; j--)
+    //     {
+    //         if (arr[index] < arr[j]) index = j;
+    //     }
+
+    //     swap(arr[i], arr[index]);
+    // }
+
+    // for (int i = 0; i < 5; i++)
+    //     cout << arr[i] << " ";
+
+    //? 3: Selection Sort Algorithm to sort the array of char in ascending order.
+
+    char arr[6] = {'d', 'a', 'c', 'f', 'b', 'e'};
+    
+    for (int i = 0; i < 5; i++)
     {
         int index = i;
-        for (int j = i-1; j >= 0; j--)
+        for (int j = i+1; j < 6; j++)
         {
-            if (arr[index] < arr[j]) index = j;
+            if (arr[index] > arr[j]) index = j;
         }
-
         swap(arr[i], arr[index]);
     }
 
-    for (int i = 0; i < 5; i++)
-        cout << arr[i] << " ";
 
-    //? 3: Selection Sort Algorithm to sort the array of char in ascending order.
+    for (int i = 0; i < 6; i++)
+    cout << arr[i] << " ";
 }
 
 int main()
