@@ -1,36 +1,78 @@
 #include <iostream>
 using namespace std;
 
-int main()
+void lacturePractic()
 {
-    // Bubble Sorting in Array
+     // Bubble Sorting in Array
+     int arr[1000];
+     int n;
+     cout << "Enter Array Size: ";
+     cin >> n;
+     cout << "Enter your value: ";
+ 
+     for (int i = 0; i < n; i++)
+     {
+         cin >> arr[i];
+     }
+     for (int i = n - 2; i >= 0; i--)
+     {
+         bool swapped = false;
+         for (int j = 0; j <= i; j++)
+         {
+             if (arr[j] > arr[j + 1])
+             {
+                 swapped = true;
+                 swap(arr[j], arr[j + 1]);
+             }
+         }
+         if (!swapped)
+             break;
+     }
+ 
+     cout << "Sorted array: ";
+     for (int i = 0; i < n; i++)
+         cout << arr[i] << " ";
+}
+
+
+void HomeWork()
+{
+    //? 1: Use Bubble Sort Algorithm to sort the array of integers in decreasing order.
     int arr[1000];
     int n;
     cout << "Enter Array Size: ";
-    cin >> n;
-    cout << "Enter your value: ";
+    cin>>n;
+    cout << "Enter Your Values: ";
 
     for (int i = 0; i < n; i++)
     {
-        cin >> arr[i];
+        cin>>arr[i];
     }
-    for (int i = n - 2; i >= 0; i--)
+
+    for (int i = n-2; i >= 0; i--)
     {
         bool swapped = false;
-        for (int j = 0; j <= i; j++)
+        for (int j = 0; j <= n-2; j++)
         {
-            if (arr[j] > arr[j + 1])
+            if (arr[j] < arr[j + 1])
             {
-                swapped = true;
                 swap(arr[j], arr[j + 1]);
+                swapped = true;
             }
         }
-        if (!swapped)
-            break;
+        if (!swapped) break;
     }
 
-
-    cout << "Sorted array: ";
+    cout<<"Sorted Array: ";
     for (int i = 0; i < n; i++)
-        cout << arr[i] << " ";
+    {
+        cout<<arr[i] << " ";
+    }
+
+}
+
+int main()
+{
+//    lacturePractic();
+   HomeWork();
 }
