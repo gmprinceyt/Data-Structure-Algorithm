@@ -68,17 +68,17 @@ void HomeWorkPractic()
 
     //? 3: Selection Sort Algorithm to sort the array of char in ascending order.
 
-    char arr[6] = {'d', 'a', 'c', 'f', 'b', 'e'};
+    // char arr[6] = {'d', 'a', 'c', 'f', 'b', 'e'};
     
-    for (int i = 0; i < 5; i++)
-    {
-        int index = i;
-        for (int j = i+1; j < 6; j++)
-        {
-            if (arr[index] > arr[j]) index = j;
-        }
-        swap(arr[i], arr[index]);
-    }
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     int index = i;
+    //     for (int j = i+1; j < 6; j++)
+    //     {
+    //         if (arr[index] > arr[j]) index = j;
+    //     }
+    //     swap(arr[i], arr[index]);
+    // }
 
 
     for (int i = 0; i < 6; i++)
