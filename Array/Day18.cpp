@@ -33,7 +33,6 @@ void lacturePractic()
 
 void HomeWorkQuestion()
 {
-    //? 1: Selection Sort Algorithm to sort the array of integers in decreasing order.
 
     int arr[1000];
     int n;
@@ -44,15 +43,31 @@ void HomeWorkQuestion()
     for (int i = 0; i < n; i++)
         cin >> arr[i];
 
+    //? 1: Selection Sort Algorithm to sort the array of integers in decreasing order.
     // Algorithm
 
-    for (int i = 1; i < n; i++)
+    // for (int i = 1; i < n; i++)
+    // {
+    //     for (int j = i; j > 0; j--)
+    //     {
+    //         if (arr[j] > arr[j - 1])
+    //             swap(arr[j], arr[j - 1]);
+    //         else
+    //             break;
+    //     }
+    // }
+
+    //? 2: Selection Sort Algorithm to sort the array of integers in increasing order by taking the highest number to last place. Question was explained in the class. 
+
+    // algorithm
+
+    for (int i = n-2; i >= 0; i--)
     {
-        for (int j = i; j > 0; j--)
+        for (int j = i; j < n; j++)
         {
-            if (arr[j] > arr[j - 1])
-                swap(arr[j], arr[j - 1]);
-            else
+            if (arr[j] > arr[j+1])
+                swap(arr[j], arr[j+1]);
+            else 
                 break;
         }
     }
