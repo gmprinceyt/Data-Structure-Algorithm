@@ -43,7 +43,8 @@ void HomeWorkQuestion()
     // for (int i = 0; i < n; i++)
     //     cin >> arr[i];
 
-    //? 1: Selection Sort Algorithm to sort the array of integers in decreasing order.
+    //? 1: Use Insertion Sort Algorithm to sort the array of integers in decreasing order.
+
     // Algorithm
 
     // for (int i = 1; i < n; i++)
@@ -57,7 +58,7 @@ void HomeWorkQuestion()
     //     }
     // }
 
-    //? 2: Selection Sort Algorithm to sort the array of integers in increasing order by taking the highest number to last place. Question was explained in the class.
+    //? 2: Insertion Sort Algorithm to sort the array of integers in increasing order if we start from the last element of the array. Question was explained in the class.
 
     // algorithm
 
@@ -77,7 +78,7 @@ void HomeWorkQuestion()
     // for (int i = 0; i < n; i++)
     //     cout << arr[i] << " ";
 
-    //? 3: Selection Sort Algorithm to sort the array of char in ascending order.
+    //? 3: insertion Sort Algorithm to sort the array of char in ascending order.
 
     char arr[100];
     int n;
