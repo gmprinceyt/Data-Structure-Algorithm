@@ -17,7 +17,7 @@ This repository documents my journey of learning **Data Structures and Algorithm
 - JavaScript 
 
 ## 🚀 Goal
-Master DSA concepts and improve coding performance for competitive programming and technical interviews.
+Master DSA concepts and improve coding performance for Real World Problem and technical interviews.
 
 ---
 
