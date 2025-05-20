@@ -42,7 +42,6 @@ int SqureFind(int n){
 
 
 
-
     return ans;
 }
 
