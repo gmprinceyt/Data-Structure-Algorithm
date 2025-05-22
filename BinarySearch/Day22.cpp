@@ -12,7 +12,7 @@ int main() {
     int start=0, end = arr.size();
     while (start <= end){
         int x = (start + end)/2;
-        int idx = lower_bound(arr.begin(), arr.end(), x) - arr.begin(); //! write your Binary Search lowerbound Code
+        int idx = lower_bound(arr.begin(), arr.end(), x) - arr.begin(); //! write your own Binary Search lowerbound Code
         int count = arr.size() - idx;
 
         if (count == x ){
