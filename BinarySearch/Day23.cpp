@@ -13,14 +13,11 @@ int main(){
     while (start <= end){
         //* skip Dublicate Elements
             // left
-        if(arr[start] == arr[start+1]) {
-        start++; 
-        continue;
+        while(start < end && arr[start] == arr[start+1]){
+            start++;
         }
-            // right 
-        if(arr[end] == arr[end-1]) {
-            end--; 
-            continue;
+        while(start < end && arr[end] == arr[end-1]){
+            end--;
         }
 
         int mid = start + (end - start )/2;
