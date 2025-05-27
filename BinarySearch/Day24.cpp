@@ -25,6 +25,9 @@ int main(){
     int ans = -1;
     int str = max,end=sum;
 
+    // Error Handle -> if distubution > array of Size(book)
+    if (4 < dis) return;
+
     while (str <= end){
         int mid = str + (end - str)/2;
         int pages=0,count=1;
